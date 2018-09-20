@@ -1,9 +1,12 @@
-/* Style the header with a grey background and some padding */
+#title {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2em; 
+}
 .header {
   border-radius: 15px;
-  overflow: hidden;
-  background-color: #6BD5FF;
-  padding: 1.4% .5%;
+  overflow: auto;
+  background-color: #19adff;
+  padding: .5% .1%;
   margin-bottom: 1%;
 }
 
@@ -12,14 +15,72 @@
   float: left;
   color: black;
   text-align: center;
-  padding: 12px;
+  padding: 16px;
   text-decoration: none;
-  font-size: 120%; 
+  font-size: 100%; 
+  font-family: 'Merienda', cursive;
   line-height: 175%;
   border-radius: 100px;
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header_tabs {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #6BD5FF;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+}
+
+.header_button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Courgette', cursive;
+}
+
+.header_image {
+  float: center;
+  height: 5%;
+  width: 5%;
+}
+
+.meal {
+    float: left;
+    width: 82%;
+    font-family: 'Luckiest Guy', cursive;
+    border: 2px outset blue;
+    margin-left: 17%;
+    padding: .5%;
+    height: auto;
+    overflow: auto;
+}
+
+.us {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%;
+  width: 25%;
+}
+
+.header_button:hover{
+  background-color: #0AA9FF;
+}
+
+.header_button:active {
+  background-color: #0AA9FF;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
 .header a.title {
   font-size: 175%;
   font-weight: bold;
@@ -42,7 +103,32 @@
   float: right;
 }
 
+/*end of header file*/
+
 img {
-  height: 400px;
-  width: 300px;
+  height: 25em;
+  width: 20em;
 }
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #19adff;
+  color: black;
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: .8em;
+}
+
+
+
+

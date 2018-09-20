@@ -6,3 +6,4 @@ function openFood(mealTime) {
     }
     document.getElementById(mealTime).style.display = "block"; 
 }
+

@@ -4,35 +4,70 @@
   <title>Our Favorite Recipes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Gloria+Hallelujah|Merienda" rel="stylesheet">
   <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
   
   <div class="header">
-  <a href="./index.html" class="title">Asian Canadian Kitchen</a>
-  <div class="header-right">
-    <a class="active" href="./index.html">Home</a>
-    <a href="./contact.html">Contact</a>
-    <a href="./about.html">About</a>
+    <a href="./index.html" id="title">Asian Canadian Kitchen</a>
+    <div class="header-right">
+      <a class="active" href="./index.html">Home</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./about.html">About</a>
+    </div>
+   <img src="http://www.stickpng.com/assets/images/58afdad6829958a978a4a693.png" class="header_image"></img>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Maple_Leaf_%28from_roundel%29.svg/910px-Maple_Leaf_%28from_roundel%29.svg.png" class="header_image"></img>
   </div>
-</div>
 
-  <div class="header-tabs">
+  <div class="header_tabs">
     <button class="header_button" onclick="openFood('Breakfast')">Breakfast</button>
     <button class="header_button" onclick="openFood('Lunch')">Lunch</button>
     <button class="header_button" onclick="openFood('Dinner')">Dinner</button>
     <button class="header_button" onclick="openFood('Dessert')">Dessert</button>
-
+  <br>
+  </div>
+  
+  <div id="Home" class="meal">
+    <h2>Welcome!</h2>
+    <p>For the longest time my wife and I have been wanting to organize my recipes into one spot. Every
+    night is a struggle to remember what we can cook, think of what we want to eat, and then thaw the 
+    freaking meat. No longer! It'll be nicely placed here so we no longer have to look everywhere for 
+    what we want to eat. Have fun looking around! </p>
+    <img src="./Picture.JPG" class="us"></img>
   </div>
 
-  <div id="Breakfast" class="meal">
+  <div id="Breakfast" class="meal" style="display:none">
     <h2>Breakfast</h2>
-    <a href="./fried_rice.html">
-      <img src="https://therecipecritic.com/wp-content/uploads/2013/08/friedricefinal.jpg" alt="Yummy Fried Rice">Fried Rice
-    </a>
-    <a href="./spam.html">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Deep-fried_spam_%282041662434%29.jpg" alt="Yummy Spam and Rice">Spam and Rice
-    </a>
+    <div class="grid-container">
+      <div class="box_1">
+        <a href="./waffles.html">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvFhujTneMmhwzI7DI5NOSaHbocKUj4WwvfrW9AdPijdHRV1t_" alt="Yummy Waffles">
+        </a>
+        <h4>Yummy Waffles</h4>
+      </div>
+      <div class="box_2">
+        <a href="./spam.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Deep-fried_spam_%282041662434%29.jpg" alt="Yummy Spam and Rice">
+        </a>
+        <h4>Yummy Spam and Rice</h4>
+      </div>
+      <div class="box_3">
+        <a href="./fried_rice.html">
+          <img src="https://therecipecritic.com/wp-content/uploads/2013/08/friedricefinal.jpg" alt="Yummy Fried Rice">
+        </a>
+        <h4>Yummy Fried Rice</h4>
+      </div>
+      <div class="box_4"></div>
+      <div class="box_5"></div>
+      <div class="box_6"></div>
+      <div class="box_7"></div>
+      <div class="box_8"></div>
+      <div class="box_9"></div>
+  </div>
+    
+    
+    
   </div>
 
   <div id="Lunch" class="meal" style="display:none">
@@ -50,5 +85,8 @@
     <p>Eventually put dessert recipes</p>
   </div>
 
+  <div id="footer">
+    <p>Created by David Leavitt for Kylee Leavitt</p>
+  </div>
 </body>
 </html>
