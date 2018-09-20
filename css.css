@@ -60,7 +60,7 @@
     margin-left: 17%;
     padding: .5%;
     height: auto;
-    overflow: auto;
+    margin-bottom: 5em;
 }
 
 .us {
@@ -107,7 +107,8 @@
 
 img {
   height: 25em;
-  width: 20em;
+  width: 24em;
+  padding: .2em;
 }
 
 .grid-container {
@@ -115,7 +116,15 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  
+}
+
+#game {
+  text-align:center;
+  font-family: helvetica;
+}
+
+canvas {
+  border: 2px solid #1c56b2;
 }
 
 #footer {
